@@ -4,6 +4,12 @@ import { Link } from "react-router-dom";
 
 import * as S from './styles'
 
+import ExpenseListy from '../../assets/ExpenseListy.webp';
+import ExpenseListy2 from '../../assets/ExpenseListy2.webp';
+import ExpenseListy3 from '../../assets/ExpenseListy3.webp';
+import ExpenseListy4 from '../../assets/ExpenseListy4.webp';
+import ExpenseListy5 from '../../assets/ExpenseListy5.webp';
+import ExpenseListy6 from '../../assets/ExpenseListy6.webp';
 import euIMG from '../../assets/eu1.jpeg';
 import background from '../../assets/dark_background.jpg';
 import linkdin from '../../assets/linkedin.png'
@@ -44,15 +50,16 @@ const Home = () => {
                 >
                     <S.FirstName>Marcelo</S.FirstName>
                     <S.LastName>Azevedo</S.LastName>
+                    {/* <img src={ExpenseListy} alt="ExpenseListy" style={{width: 50}} /> */}
                 </S.CenterViewName>
             )}
 
             {route === 2 && (
                 <S.CenterViewName
-                    style={{flexDirection:'row'}}
+                    style={{ flexDirection: 'row' }}
                 >
                     <img src={euIMG} alt="Contato de Linkein" style={{ width: 200, cursor: 'pointer', marginRight: 10, borderRadius: 10 }} />
-                    <p style={{color:'#fff', textAlign:'left', marginLeft: 10}}>
+                    <p style={{ color: '#fff', textAlign: 'left', marginLeft: 10 }}>
                         Programador desde 2021, com experiência no desenvolvimento web e mobile com as tecnologias ReactJS, NextsJS e React Native.
                         <br /><br />
                         Já atuei na componentização e criação de aplicações desde o setor a aviação até A.I para negócio.
@@ -66,15 +73,36 @@ const Home = () => {
                         Sou um entusiasta da programação front-end, autodidatismo e dedicação é algo que trago no sangue. Aprender com os companheiros
                         de equipe e ajuda-los no crescimento profissional é uma atitude que tenho prazer em ter, afinal, trabalhar em equipe é isso.
                     </p>
-                    
+
                 </S.CenterViewName>
             )}
 
             {route === 3 && (
                 <S.CenterViewName
                 >
-                    <S.FirstName>Marcelo</S.FirstName>
-                    <S.LastName>Azevedo</S.LastName>
+                    <p style={{ color: '#fff', marginBottom: 12, textAlign:'left' }}>
+                        ExpenseListy é um projeto que nasceu de uma necessidade pessoal, eu e minha esposa tinhamos o desejo de salvar
+                        nossas listas de compras do mercado, separando por valores, categorias e a soma total de cada compra mensal, não 
+                        encontrando um aplicativo que realizasse esta tarefa da forma como queríamos, resolvi desenvolver um do zero. O app
+                        começou simples, porém fui desenvolvendo e atualmente estou colocando novas funções para mehlor atender a outras pessoas
+                        que queiram utiliza-lo.
+                        <br />
+                        Para desenvolver este utilizei as tecnologias:<br /><br />
+                        - React Native;<br /><br />
+                        - TypeScript; <br /><br />
+                        - Stotybook; <br /><br />
+                        - Styled-components;  <br /><br />
+                        - RealmDB;
+                    </p>
+                    <a href="https://play.google.com/store/apps/details?id=com.shoplisty_app" target="_blank" style={{ textDecoration: 'none', color: '#fff', cursor: 'pointer' }}>
+                        <img src={ExpenseListy} alt="Contato de Linkein" style={{ width: 100, cursor: 'pointer', marginRight: 10 }} />
+                        <img src={ExpenseListy2} alt="Contato de Linkein" style={{ width: 100, cursor: 'pointer', marginRight: 10 }} />
+                        <img src={ExpenseListy3} alt="Contato de Linkein" style={{ width: 100, cursor: 'pointer', marginRight: 10 }} />
+                        <img src={ExpenseListy4} alt="Contato de Linkein" style={{ width: 100, cursor: 'pointer', marginRight: 10 }} />
+                        <img src={ExpenseListy5} alt="Contato de Linkein" style={{ width: 100, cursor: 'pointer', marginRight: 10 }} />
+                        <img src={ExpenseListy6} alt="Contato de Linkein" style={{ width: 100, cursor: 'pointer', marginRight: 10 }} />
+                    </a>
+
                 </S.CenterViewName>
             )}
 
